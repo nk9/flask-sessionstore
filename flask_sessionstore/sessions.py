@@ -16,7 +16,8 @@ from uuid import uuid4
 from flask.sessions import SessionInterface as FlaskSessionInterface
 from flask.sessions import SessionMixin, TaggedJSONSerializer
 from werkzeug.datastructures import CallbackDict
-from itsdangerous import Signer, BadSignature, want_bytes
+from itsdangerous import Signer, BadSignature
+from itsdangerous.encoding import want_bytes
 
 
 PY2 = sys.version_info[0] == 2
